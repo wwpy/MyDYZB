@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Follow View Controller-->
         <scene sceneID="2KH-6U-BoG">
             <objects>
-                <viewController id="f9l-Xj-9qF" sceneMemberID="viewController">
+                <viewController id="f9l-Xj-9qF" customClass="FollowViewController" customModule="MyDYZB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPO-XP-KHG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
