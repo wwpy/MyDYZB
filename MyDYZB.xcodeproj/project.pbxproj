@@ -20,9 +20,10 @@
 		D477157E2545B1C100155526 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D477157D2545B1C100155526 /* HomeViewController.swift */; };
 		D477158B2545B2A100155526 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47715892545B2A100155526 /* Live.storyboard */; };
 		D47715902545B2BB00155526 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D477158F2545B2BB00155526 /* LiveViewController.swift */; };
-		D47715962545B2FD00155526 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47715942545B2FD00155526 /* Follow.storyboard */; };
 		D47715982545B32C00155526 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47715972545B32C00155526 /* FollowViewController.swift */; };
 		D47715A02545B34700155526 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D477159F2545B34700155526 /* ProfileViewController.swift */; };
+		D47715A62545B3E300155526 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47715A42545B3E200155526 /* Follow.storyboard */; };
+		D47715AC2545BE4D00155526 /* UIBarButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +63,10 @@
 		D477157D2545B1C100155526 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D477158A2545B2A100155526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyDYZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		D477158F2545B2BB00155526 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
-		D47715952545B2FD00155526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyDYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		D47715972545B32C00155526 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FollowViewController.swift; path = MyDYZB/Classes/Follow/Controller/FollowViewController.swift; sourceTree = SOURCE_ROOT; };
 		D477159F2545B34700155526 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D47715A52545B3E200155526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyDYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		D47714D925458D9800155526 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D47715AA2545BE1700155526 /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -270,7 +273,7 @@
 		D47715302545AB2F00155526 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D47715942545B2FD00155526 /* Follow.storyboard */,
+				D47715A42545B3E200155526 /* Follow.storyboard */,
 				D47715972545B32C00155526 /* FollowViewController.swift */,
 			);
 			name = Controller;
@@ -329,6 +332,14 @@
 				D477158F2545B2BB00155526 /* LiveViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D47715AA2545BE1700155526 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +449,7 @@
 				D47714A22545869900155526 /* LaunchScreen.storyboard in Resources */,
 				D477149F2545869900155526 /* Assets.xcassets in Resources */,
 				D47715492545AD5E00155526 /* Home.storyboard in Resources */,
-				D47715962545B2FD00155526 /* Follow.storyboard in Resources */,
+				D47715A62545B3E300155526 /* Follow.storyboard in Resources */,
 				D47715792545AF9700155526 /* Profile.storyboard in Resources */,
 				D477158B2545B2A100155526 /* Live.storyboard in Resources */,
 			);
@@ -470,6 +481,7 @@
 				D477151C2545AADA00155526 /* MainTabBarController.swift in Sources */,
 				D47715982545B32C00155526 /* FollowViewController.swift in Sources */,
 				D47715A02545B34700155526 /* ProfileViewController.swift in Sources */,
+				D47715AC2545BE4D00155526 /* UIBarButton+Extension.swift in Sources */,
 				D477157E2545B1C100155526 /* HomeViewController.swift in Sources */,
 				D47715902545B2BB00155526 /* LiveViewController.swift in Sources */,
 			);
@@ -547,10 +559,10 @@
 			name = Live.storyboard;
 			sourceTree = "<group>";
 		};
-		D47715942545B2FD00155526 /* Follow.storyboard */ = {
+		D47715A42545B3E200155526 /* Follow.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D47715952545B2FD00155526 /* Base */,
+				D47715A52545B3E200155526 /* Base */,
 			);
 			name = Follow.storyboard;
 			sourceTree = "<group>";
