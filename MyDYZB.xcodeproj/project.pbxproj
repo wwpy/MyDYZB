@@ -24,6 +24,8 @@
 		D47715A02545B34700155526 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D477159F2545B34700155526 /* ProfileViewController.swift */; };
 		D47715A62545B3E300155526 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47715A42545B3E200155526 /* Follow.storyboard */; };
 		D47715AC2545BE4D00155526 /* UIBarButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */; };
+		D4F48D4325503C6800CA9DB0 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F48D4225503C6800CA9DB0 /* PageTitleView.swift */; };
+		D4F48D4825503F6400CA9DB0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F48D4725503F6400CA9DB0 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		D477159F2545B34700155526 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D47715A52545B3E200155526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyDYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extension.swift"; sourceTree = "<group>"; };
+		D4F48D4225503C6800CA9DB0 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		D4F48D4725503F6400CA9DB0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				D47715AA2545BE1700155526 /* Extension */,
+				D4F48D4725503F6400CA9DB0 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 		D477151B2545AADA00155526 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D4F48D4225503C6800CA9DB0 /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -482,7 +488,9 @@
 				D47715982545B32C00155526 /* FollowViewController.swift in Sources */,
 				D47715A02545B34700155526 /* ProfileViewController.swift in Sources */,
 				D47715AC2545BE4D00155526 /* UIBarButton+Extension.swift in Sources */,
+				D4F48D4325503C6800CA9DB0 /* PageTitleView.swift in Sources */,
 				D477157E2545B1C100155526 /* HomeViewController.swift in Sources */,
+				D4F48D4825503F6400CA9DB0 /* Common.swift in Sources */,
 				D47715902545B2BB00155526 /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
