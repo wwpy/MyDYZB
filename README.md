@@ -11,6 +11,25 @@ ios 14
 automaticallyAdjustsScrollViewInsets = false
 ```
 
+### 状态栏和导航栏
+
+```swift
+//获取状态栏的rect
+CGRect statusRect = [[UIApplication sharedApplication] statusBarFrame];
+//获取导航栏的rect
+CGRect navRect = self.navigationController.navigationBar.frame;
+//导航栏+状态栏的高度
+statusRect.size.height+navRect.size.height
+// iOS14
+
+```
+
+```
+override var prefersStatusBarHidden: Bool {
+		return false
+}
+```
+
 
 
  

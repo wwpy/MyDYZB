@@ -26,6 +26,8 @@
 		D47715AC2545BE4D00155526 /* UIBarButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */; };
 		D4F48D4325503C6800CA9DB0 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F48D4225503C6800CA9DB0 /* PageTitleView.swift */; };
 		D4F48D4825503F6400CA9DB0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F48D4725503F6400CA9DB0 /* Common.swift */; };
+		D4F48D4D2551735100CA9DB0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F48D4C2551735100CA9DB0 /* PageContentView.swift */; };
+		D4F48D52255176C900CA9DB0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F48D51255176C900CA9DB0 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extension.swift"; sourceTree = "<group>"; };
 		D4F48D4225503C6800CA9DB0 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		D4F48D4725503F6400CA9DB0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		D4F48D4C2551735100CA9DB0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		D4F48D51255176C900CA9DB0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				D4F48D4225503C6800CA9DB0 /* PageTitleView.swift */,
+				D4F48D4C2551735100CA9DB0 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				D47715AB2545BE4D00155526 /* UIBarButton+Extension.swift */,
+				D4F48D51255176C900CA9DB0 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -484,6 +490,8 @@
 			files = (
 				D47714962545869600155526 /* AppDelegate.swift in Sources */,
 				D47714982545869600155526 /* SceneDelegate.swift in Sources */,
+				D4F48D4D2551735100CA9DB0 /* PageContentView.swift in Sources */,
+				D4F48D52255176C900CA9DB0 /* UIColor+Extension.swift in Sources */,
 				D477151C2545AADA00155526 /* MainTabBarController.swift in Sources */,
 				D47715982545B32C00155526 /* FollowViewController.swift in Sources */,
 				D47715A02545B34700155526 /* ProfileViewController.swift in Sources */,
