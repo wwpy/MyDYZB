@@ -25,6 +25,7 @@
                     </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="iN0-l3-epB" id="eQu-Zr-PP8"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="uCz-aD-IaX"/>
                     </connections>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Dpp-Cy-Ork">
@@ -48,7 +49,7 @@
                 <outlet property="collectionView" destination="KUs-ha-JhJ" id="BX5-9K-9wN"/>
                 <outlet property="pageControl" destination="Dpp-Cy-Ork" id="xvh-LC-BVf"/>
             </connections>
-            <point key="canvasLocation" x="-62" y="19"/>
+            <point key="canvasLocation" x="56" y="52"/>
         </view>
     </objects>
     <resources>

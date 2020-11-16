@@ -104,6 +104,7 @@ extension RecommendViewModel {
             guard let weakSelf = self else { return }
             // 获取数据
             guard let dataArray = response as? [[String : Any]] else { return }
+            
             // 字典转模型对象
             for dict in dataArray {
                 weakSelf.cycleModels.append(CycleModel(dict: dict))

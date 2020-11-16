@@ -9,11 +9,11 @@ import UIKit
 
 class CycleModel: NSObject {
     // 标题
-    var title: String = ""
+    @objc var title: String = ""
     // 展示图片地址
-    var pic_url: String = ""
+    @objc var pic_url: String = ""
     // 主播信息对应的字典
-    var room: [String : Any]? {
+    @objc var room: [String : Any]? {
         didSet {
             guard let room = room else { return }
             anchor = AnchorModel(dict: room)
