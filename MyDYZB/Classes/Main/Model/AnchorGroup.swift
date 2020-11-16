@@ -22,6 +22,8 @@ class AnchorGroup: NSObject {
     @objc var tag_name: String = ""
     /// 图标
     @objc var icon_name: String = "CollHeader_Play"
+    /// 游戏对应的图标
+    @objc var icon_url: String = ""
     // 定义主播的模型对象数组
     public lazy var anchors: [AnchorModel] = [AnchorModel]()
     

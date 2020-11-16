@@ -35,7 +35,7 @@
                 </pageControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KUs-ha-JhJ" secondAttribute="bottom" id="EKR-CL-f6q"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dpp-Cy-Ork" secondAttribute="trailing" constant="10" id="Qnx-g8-yOr"/>
@@ -49,7 +49,7 @@
                 <outlet property="collectionView" destination="KUs-ha-JhJ" id="BX5-9K-9wN"/>
                 <outlet property="pageControl" destination="Dpp-Cy-Ork" id="xvh-LC-BVf"/>
             </connections>
-            <point key="canvasLocation" x="56" y="52"/>
+            <point key="canvasLocation" x="-143" y="10"/>
         </view>
     </objects>
     <resources>

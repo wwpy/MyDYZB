@@ -37,7 +37,7 @@ class RecommendCycleView: UIView {
         super.awakeFromNib()
         
         // 设置不随父控件的变化而变化
-        autoresizingMask = AutoresizingMask.flexibleWidth
+        autoresizingMask = [.flexibleWidth]
         // 注册Cell
         collectionView.register(UINib(nibName: "CollectionCycleCell", bundle: nil), forCellWithReuseIdentifier: kCycleCellID)
        

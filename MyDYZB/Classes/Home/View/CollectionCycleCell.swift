@@ -22,4 +22,8 @@ class CollectionCycleCell: UICollectionViewCell {
         }
     }
     
+    override func awakeFromNib() {
+//        autoresizingMask = [.flexibleWidth]
+    }
+    
 }
