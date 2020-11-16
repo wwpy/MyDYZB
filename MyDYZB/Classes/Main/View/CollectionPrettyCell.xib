@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="MyDYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8C-fH-E0N">
+                        <rect key="frame" x="0.0" y="131" width="46" height="14"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Hco-3B-h29"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="黄冈市" image="CollCell_LocationIcon">
+                            <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小武哥IT教育" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7v-7a-MSE">
+                        <rect key="frame" x="0.0" y="110" width="100" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="MMe-d7-aaI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CollCell_Pretty_PlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="dO2-0t-A4M">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGy-9B-Wdh">
+                        <rect key="frame" x="37" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="7XV-Lx-SzH"/>
+                            <constraint firstAttribute="height" constant="20" id="Z9f-CD-nQB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="6666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="U8C-fH-E0N" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4uU-s8-ZxQ"/>
+                <constraint firstItem="dO2-0t-A4M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="663-BJ-LWY"/>
+                <constraint firstItem="dO2-0t-A4M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8eo-ao-bef"/>
+                <constraint firstAttribute="trailing" secondItem="LGy-9B-Wdh" secondAttribute="trailing" constant="8" id="9to-3v-Vlc"/>
+                <constraint firstAttribute="trailing" secondItem="dO2-0t-A4M" secondAttribute="trailing" id="Bbw-4g-j6h"/>
+                <constraint firstItem="U8C-fH-E0N" firstAttribute="top" secondItem="a7v-7a-MSE" secondAttribute="bottom" constant="5" id="BrS-xO-HaL"/>
+                <constraint firstAttribute="bottom" secondItem="U8C-fH-E0N" secondAttribute="bottom" constant="10" id="ByF-lA-AKN"/>
+                <constraint firstItem="a7v-7a-MSE" firstAttribute="top" secondItem="dO2-0t-A4M" secondAttribute="bottom" constant="5" id="Hvh-2T-0kI"/>
+                <constraint firstAttribute="trailing" secondItem="a7v-7a-MSE" secondAttribute="trailing" constant="5" id="ZHL-lf-oGg"/>
+                <constraint firstItem="LGy-9B-Wdh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="deU-Ql-G7o"/>
+                <constraint firstItem="a7v-7a-MSE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kid-Dx-3yO"/>
+            </constraints>
+            <size key="customSize" width="105" height="155"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cityBtn" destination="U8C-fH-E0N" id="MUX-cu-Jl6"/>
+                <outlet property="iconImageView" destination="dO2-0t-A4M" id="AZS-Ch-vlN"/>
+                <outlet property="nicknameLabel" destination="a7v-7a-MSE" id="dAC-a8-Q8r"/>
+                <outlet property="onlineBtn" destination="LGy-9B-Wdh" id="lgn-Yv-ts6"/>
+            </connections>
+            <point key="canvasLocation" x="-640" y="-43"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CollCell_LocationIcon" width="12" height="12"/>
+        <image name="CollCell_Pretty_PlaceHolder" width="207" height="207"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
