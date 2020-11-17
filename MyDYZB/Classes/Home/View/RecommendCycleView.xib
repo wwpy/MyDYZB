@@ -11,11 +11,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecommendCycleView" customModule="MyDYZB" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-ha-JhJ">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="f4q-5N-nxL">
                         <size key="itemSize" width="128" height="128"/>
@@ -29,7 +29,7 @@
                     </connections>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Dpp-Cy-Ork">
-                    <rect key="frame" x="242" y="122" width="123" height="28"/>
+                    <rect key="frame" x="281" y="122" width="123" height="28"/>
                     <color key="pageIndicatorTintColor" systemColor="opaqueSeparatorColor"/>
                     <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
                 </pageControl>

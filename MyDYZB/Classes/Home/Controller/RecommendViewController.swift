@@ -7,20 +7,10 @@
 
 import UIKit
 
-private let kItemMargin: CGFloat = 10
-private let kItemW = (kScreenW - 3 * kItemMargin) / 2
-private let kNormalItemH = kItemW * 3 / 4
-private let kPrettyItemH = kItemW * 4 / 3
-private let kHeaderViewH: CGFloat = 50
-
-private let kCycleViewH = kScreenW * 3 / 8 + 10
+private let kCycleViewH = kScreenW * 3 / 8
 private let kGameViewH: CGFloat = 90
 
-private let kNormalCellID = "kNormalCellID"
-private let kHeaderViewID = "kHeaderViewID"
-private let kPrettyCellID = "kPrettyCellID"
-
-class RecommendViewController: BaseViewController {
+class RecommendViewController: BaseAnchorViewController {
 
     //MARK:- 懒加载属性
     private lazy var recommendVM: RecommendViewModel = RecommendViewModel()
@@ -95,8 +85,8 @@ extension RecommendViewController : UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 1 {
-            return CGSize(width: kItemW, height: kPrettyItemH)
+            return CGSize(width: kNormalItemW, height: kPrettyItemH)
         }
-        return CGSize(width: kItemW, height: kNormalItemH)
+        return CGSize(width: kNormalItemW, height: kNormalItemH)
     }
 }

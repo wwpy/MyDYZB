@@ -8,23 +8,24 @@
 import UIKit
 
 private let kItemMargin: CGFloat = 10
-private let kItemW = (kScreenW - 3 * kItemMargin) / 2
-private let kNormalItemH = kItemW * 3 / 4
-private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH: CGFloat = 50
 
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
-private let kPrettyCellID = "kPrettyCellID"
 
-class BaseViewController: UIViewController {
+let kPrettyCellID = "kPrettyCellID"
+let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
+let kNormalItemH = kNormalItemW * 3 / 4
+let kPrettyItemH = kNormalItemW * 4 / 3
+
+class BaseAnchorViewController: UIViewController {
     // MARK:- 定义属性
     var baseVM: BaseViewModel!
     
     lazy var collectionView: UICollectionView = {[unowned self] in
         // 1.创建布局
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
+        layout.itemSize = CGSize(width: kNormalItemW, height: kNormalItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = kItemMargin
         // UICollectionView 标题大小
@@ -33,7 +34,7 @@ class BaseViewController: UIViewController {
         
         // 2.创建UICollectionView
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.white
+//        collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
@@ -59,21 +60,21 @@ class BaseViewController: UIViewController {
 }
 
 // MARK:- 设置UI界面
-extension BaseViewController {
+extension BaseAnchorViewController {
     @objc func setupUI() {
         view.addSubview(collectionView)
     }
 }
 
 // MARK:- 请求数据
-extension BaseViewController {
+extension BaseAnchorViewController {
     @objc func loadData() {
         
     }
 }
 
 // MARK:- 遵守UICollectionView的数据源&代理协议
-extension BaseViewController : UICollectionViewDataSource, UICollectionViewDelegate {
+extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return baseVM.anchorGroups.count
