@@ -7,10 +7,9 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel {
 
     // MARK:- 懒加载属性
-    lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
     lazy var cycleModels: [CycleModel] = [CycleModel]()
     private lazy var bigDataGroup: AnchorGroup = AnchorGroup()
     private lazy var prettyGroup: AnchorGroup = AnchorGroup()
@@ -72,20 +71,8 @@ extension RecommendViewModel {
         
         // 5.请求其他2-12数据
         disGroup.enter()
-        EWNetworkTools.ShareInstance.getData(path: "/api/v1/getHotCate", params: params) { [weak self](response) in
-            // 1. 判断
-            guard let weakSelf = self else { return }
-            // 2. 获取数组
-            guard let dataArray = response as? [[String : Any]] else { return }
-            // 3. 遍历数组,获取字典,并且将字典转成模型对象
-            for dict in dataArray {
-                let group = AnchorGroup(dict: dict)
-                weakSelf.anchorGroups.append(group)
-            }
-            // 4. 离开组
+        loadAnchorData(URLString: "/api/v1/getHotCate", paramsters: params) {
             disGroup.leave()
-        } failure: { (error) in
-            print(error)
         }
 
         // 6. 所有数据请求完成, 进行排序

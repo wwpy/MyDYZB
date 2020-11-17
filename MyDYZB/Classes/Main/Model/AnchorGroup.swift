@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnchorGroup: NSObject {
+class AnchorGroup: BaseGameModel {
     /// 房间信息
     @objc var room_list: [[String : Any]]? {
         didSet {
@@ -18,30 +18,11 @@ class AnchorGroup: NSObject {
             }
         }
     }
-    /// 标题
-    @objc var tag_name: String = ""
     /// 图标
     @objc var icon_name: String = "CollHeader_Play"
-    /// 游戏对应的图标
-    @objc var icon_url: String = ""
+
     // 定义主播的模型对象数组
     public lazy var anchors: [AnchorModel] = [AnchorModel]()
-    
-    override init() {
-        
-    }
-    
-    init(dict: [String : Any]) {
-        super.init()
-        
-        setValuesForKeys(dict)
-    }
-    
-//    override func setValue(_ value: Any?, forKey key: String) {
-//        super.setValue(value, forKey: key)
-//    }
-    
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
     
     /*
     override func setValue(_ value: Any?, forKey key: String) {

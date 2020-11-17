@@ -25,7 +25,6 @@
                     <rect key="frame" x="10" y="21" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="1OG-iA-uax"/>
-                        <constraint firstAttribute="width" constant="18" id="mXD-zG-ee6"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp4-VG-H0i">
@@ -59,9 +58,10 @@
             </constraints>
             <connections>
                 <outlet property="iconImageView" destination="mVh-eP-CeG" id="9WF-yZ-eJG"/>
+                <outlet property="moreBtn" destination="J6R-1S-BJs" id="C5Z-mn-0YH"/>
                 <outlet property="titleLable" destination="rp4-VG-H0i" id="vhq-GU-xWk"/>
             </connections>
-            <point key="canvasLocation" x="-146" y="0.0"/>
+            <point key="canvasLocation" x="-607" y="-45"/>
         </collectionReusableView>
     </objects>
     <resources>

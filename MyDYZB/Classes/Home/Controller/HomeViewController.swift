@@ -13,7 +13,7 @@ private let kTitleViewH: CGFloat = 40
 class HomeViewController: UIViewController {
     
     // MARK: - 懒加载属性
-    private lazy var pageTitleView: PageTitleView = { [weak self] in
+    fileprivate lazy var pageTitleView: PageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusH+kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
@@ -22,18 +22,19 @@ class HomeViewController: UIViewController {
         return titleView
     }()
     
-    private lazy var pageContentView: PageContentView = { [weak self] in
+    fileprivate lazy var pageContentView: PageContentView = { [weak self] in
         // 1.内容的frame
         let contentH = kScreenH - kStatusH - kNavigationBarH - kTitleViewH - kTabbarH
         let contentFrame = CGRect(x: 0, y: kStatusH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
         // 2.子控制器
         var childVcs = [UIViewController]()
         childVcs.append(RecommendViewController())
-        for _ in 0 ..< 3 {
-            let vc = UIViewController()
-            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
-            childVcs.append(vc)
-        }
+        childVcs.append(GameViewController())
+        childVcs.append(AmuseViewController())
+        let vc = UIViewController()
+        vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+        childVcs.append(vc)
+        
         let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
         contentView.delegate = self
         
@@ -52,7 +53,6 @@ class HomeViewController: UIViewController {
 // MARK:- 设置UI界面
 extension HomeViewController {
     private func setupUI() {
-
         // 1.设置导航栏
         setupNavigationBar()
         // 2.添加TitleView
@@ -78,10 +78,6 @@ extension HomeViewController {
         
         navigationItem.rightBarButtonItems = [historyItem, searchItem, qrcodeItem]
     }
-}
-
-extension HomeViewController {
-    
 }
 
 // MARK: - 遵守PageTitleViewDelegate协议

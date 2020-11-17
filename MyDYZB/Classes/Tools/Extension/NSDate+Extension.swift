@@ -9,7 +9,7 @@ import Foundation
 
 extension NSDate {
     /// 获取当前时间
-    class func getCurrentTime() -> String {
+    static  func getCurrentTime() -> String {
         let nowDate = NSDate()
         
         let interval = Int(nowDate.timeIntervalSince1970)

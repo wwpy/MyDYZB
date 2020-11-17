@@ -33,6 +33,14 @@
 		D41C316125622EA500D543E5 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41C316025622EA500D543E5 /* RecommendGameView.xib */; };
 		D41C31672562407800D543E5 /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C31652562407800D543E5 /* CollectionGameCell.swift */; };
 		D41C31682562407800D543E5 /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41C31662562407800D543E5 /* CollectionGameCell.xib */; };
+		D41C316D256272EB00D543E5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C316C256272EB00D543E5 /* GameViewController.swift */; };
+		D41C317225628CD100D543E5 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C317125628CD100D543E5 /* GameViewModel.swift */; };
+		D41C317725629D4E00D543E5 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C317625629D4E00D543E5 /* GameModel.swift */; };
+		D41C317C25629FC800D543E5 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C317B25629FC800D543E5 /* BaseGameModel.swift */; };
+		D41C318C25636A2700D543E5 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C318B25636A2700D543E5 /* AmuseViewController.swift */; };
+		D41C31912563712D00D543E5 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C31902563712D00D543E5 /* AmuseViewModel.swift */; };
+		D41C319725637B2800D543E5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C319625637B2800D543E5 /* BaseViewModel.swift */; };
+		D41C319C25637E5600D543E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41C319B25637E5600D543E5 /* BaseViewController.swift */; };
 		D47714962545869600155526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47714952545869600155526 /* AppDelegate.swift */; };
 		D47714982545869600155526 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47714972545869600155526 /* SceneDelegate.swift */; };
 		D477149F2545869900155526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D477149E2545869900155526 /* Assets.xcassets */; };
@@ -101,6 +109,14 @@
 		D41C316025622EA500D543E5 /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		D41C31652562407800D543E5 /* CollectionGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
 		D41C31662562407800D543E5 /* CollectionGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
+		D41C316C256272EB00D543E5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D41C317125628CD100D543E5 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		D41C317625629D4E00D543E5 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		D41C317B25629FC800D543E5 /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
+		D41C318B25636A2700D543E5 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		D41C31902563712D00D543E5 /* AmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
+		D41C319625637B2800D543E5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D41C319B25637E5600D543E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D47714922545869600155526 /* MyDYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47714952545869600155526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47714972545869600155526 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +194,16 @@
 			isa = PBXGroup;
 			children = (
 				D41C3098255B692000D543E5 /* RecommendViewModel.swift */,
+				D41C317125628CD100D543E5 /* GameViewModel.swift */,
+				D41C31902563712D00D543E5 /* AmuseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D41C319525637B0E00D543E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D41C319625637B2800D543E5 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -304,6 +330,7 @@
 		D47714DD25458D9800155526 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D41C319525637B0E00D543E5 /* ViewModel */,
 				D477151A2545AADA00155526 /* Model */,
 				D477151B2545AADA00155526 /* View */,
 				D47715182545AADA00155526 /* Controller */,
@@ -316,6 +343,7 @@
 			children = (
 				D47715192545AADA00155526 /* MainTabBarController.swift */,
 				D47715382545AC0000155526 /* Main.storyboard */,
+				D41C319B25637E5600D543E5 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -323,6 +351,7 @@
 		D477151A2545AADA00155526 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D41C317B25629FC800D543E5 /* BaseGameModel.swift */,
 				D41C3092255B674700D543E5 /* AnchorGroup.swift */,
 				D41C309D255B6A4800D543E5 /* AnchorModel.swift */,
 			);
@@ -349,6 +378,8 @@
 				D47715472545AD5E00155526 /* Home.storyboard */,
 				D477157D2545B1C100155526 /* HomeViewController.swift */,
 				D41C3077255A56FB00D543E5 /* RecommendViewController.swift */,
+				D41C316C256272EB00D543E5 /* GameViewController.swift */,
+				D41C318B25636A2700D543E5 /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -374,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				D41C314F2562054200D543E5 /* CycleModel.swift */,
+				D41C317625629D4E00D543E5 /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -646,6 +678,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41C318C25636A2700D543E5 /* AmuseViewController.swift in Sources */,
 				D47714962545869600155526 /* AppDelegate.swift in Sources */,
 				D41C311B255E4F6C00D543E5 /* String+Extension.swift in Sources */,
 				D47714982545869600155526 /* SceneDelegate.swift in Sources */,
@@ -666,9 +699,14 @@
 				D41C308E255B597400D543E5 /* NSDate+Extension.swift in Sources */,
 				D41C3093255B674700D543E5 /* AnchorGroup.swift in Sources */,
 				D47715AC2545BE4D00155526 /* UIBarButton+Extension.swift in Sources */,
+				D41C317225628CD100D543E5 /* GameViewModel.swift in Sources */,
 				D41C30A4255B7E5A00D543E5 /* CollectionPrettyCell.swift in Sources */,
+				D41C319C25637E5600D543E5 /* BaseViewController.swift in Sources */,
+				D41C317C25629FC800D543E5 /* BaseGameModel.swift in Sources */,
 				D4F48D4325503C6800CA9DB0 /* PageTitleView.swift in Sources */,
+				D41C316D256272EB00D543E5 /* GameViewController.swift in Sources */,
 				D477157E2545B1C100155526 /* HomeViewController.swift in Sources */,
+				D41C319725637B2800D543E5 /* BaseViewModel.swift in Sources */,
 				D41C31672562407800D543E5 /* CollectionGameCell.swift in Sources */,
 				D4F48D4825503F6400CA9DB0 /* Common.swift in Sources */,
 				D41C3125255E633000D543E5 /* EWNetworkTools.swift in Sources */,
@@ -676,6 +714,8 @@
 				D41C31462561500400D543E5 /* RecommendCycleView.swift in Sources */,
 				D47715902545B2BB00155526 /* LiveViewController.swift in Sources */,
 				D41C3078255A56FB00D543E5 /* RecommendViewController.swift in Sources */,
+				D41C31912563712D00D543E5 /* AmuseViewModel.swift in Sources */,
+				D41C317725629D4E00D543E5 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

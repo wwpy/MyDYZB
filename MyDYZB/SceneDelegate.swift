@@ -23,9 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // 监听通知
         NotificationCenter.default.addObserver(
-            forName: NSNotification.Name(rawValue: DYSwitchRootViewControllerNotification), // 通知名称, 通知中心用来识别通知的
-            object: nil,                                                                    // 发送通知的对象, 为nil 监听任何对象
-            queue: nil)                                                                     // nil 是主线程
+            forName: NSNotification.Name(
+                rawValue: DYSwitchRootViewControllerNotification), // 通知名称, 通知中心用来识别通知的
+            object: nil,                                           // 发送通知的对象, 为nil 监听任何对象
+            queue: nil)                                            // nil 是主线程
         { [weak self](notification) in
             // 切换控制器
             let vc = notification.object != nil ? LiveViewController() : ProfileViewController()

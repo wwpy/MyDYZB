@@ -14,11 +14,14 @@ class CollectionGameCell: UICollectionViewCell {
     @IBOutlet weak var titleLable: UILabel!
     
     // 定义模型属性
-    var group: AnchorGroup? {
+    var baseGame: BaseGameModel? {
         didSet {
-            titleLable.text = group?.tag_name
-            let iconURL = URL(string: group?.icon_url ?? "")
-            iconImageView.kf.setImage(with: iconURL, placeholder: UIImage(named: "More_Normal"))
+            titleLable.text = baseGame?.tag_name
+            if let iconURL = URL(string: baseGame?.icon_url ?? "") {
+                iconImageView.kf.setImage(with: iconURL)
+            } else {
+                iconImageView.image = UIImage(named: "More_Normal")
+            }
         }
     }
 

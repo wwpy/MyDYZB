@@ -12,16 +12,9 @@ private let kEdgeInsetMargin: CGFloat = 15
 
 class RecommendGameView: UIView {
     // MARK:- 定义数据属性
-    var groups: [AnchorGroup]? {
+    var groups: [BaseGameModel]? {
         didSet {
-            // 1.移出前两组数据
-            groups?.removeFirst()
-            groups?.removeFirst()
-            // 2.添加更多组
-            let moreGroup = AnchorGroup()
-            moreGroup.tag_name = "更多"
-            groups?.append(moreGroup)
-            // 3.刷新数据
+            // 刷新数据
             collectionView.reloadData()
         }
     }
@@ -57,7 +50,7 @@ extension RecommendGameView : UICollectionViewDataSource {
             withReuseIdentifier: kGameCellID,
             for: indexPath) as! CollectionGameCell
 
-        cell.group = groups![indexPath.item]
+        cell.baseGame = groups![indexPath.item]
         
         return cell
     }
