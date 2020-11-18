@@ -14,7 +14,7 @@ class GameViewModel {
 extension GameViewModel {
     func loadAllGameData(finishedCallback: @escaping () -> ()) {
         // http://capi.douyucdn.cn/api/v1/getColumnDetail?shortName=game
-        EWNetworkTools.ShareInstance.getData(path: "/api/v1/getColumnDetail", params: [:]) { (response) in
+        EWNetworkTools.ShareInstance.getData(path: "/api/v1/getColumnDetail", params: ["limit": 30, "offset": 0]) { (response) in
             // 1. 获取数据
             guard let dataArray = response as? [[String : Any]] else { return }
             // 2.字典转模型

@@ -59,7 +59,7 @@
                 <outlet property="iconImageView" destination="ejA-Fq-wjH" id="s1s-gW-che"/>
                 <outlet property="titleLable" destination="ppg-rK-3te" id="0Wk-NM-fZv"/>
             </connections>
-            <point key="canvasLocation" x="-330.43478260869568" y="-12.053571428571429"/>
+            <point key="canvasLocation" x="-678" y="-24"/>
         </collectionViewCell>
     </objects>
     <resources>

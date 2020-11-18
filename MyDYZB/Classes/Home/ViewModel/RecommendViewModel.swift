@@ -71,7 +71,7 @@ extension RecommendViewModel {
         
         // 5.请求其他2-12数据
         disGroup.enter()
-        loadAnchorData(URLString: "/api/v1/getHotCate", paramsters: params) {
+        loadAnchorData(isGroupData: true, URLString: "/api/v1/getHotCate", paramsters: params) {
             disGroup.leave()
         }
 
