@@ -1,5 +1,9 @@
 ## 仿斗鱼直播
 
+### 项目目录
+
+[斗鱼项目目录](./doc/z_video/catalog.mov)
+
 ```swift
 /*
 非iPhoneX：状态栏高度(20.f) + 导航栏高度(44.f) = 64f
