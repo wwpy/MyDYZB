@@ -2,7 +2,9 @@
 
 ### 项目目录
 
-[斗鱼项目目录](./doc/z_video/catalog.mov)
+[斗鱼项目目录mov](./doc/z_video/catalog.mov)
+
+![斗鱼项目目录img](./doc/z_img/catalog.png)
 
 ```swift
 /*
