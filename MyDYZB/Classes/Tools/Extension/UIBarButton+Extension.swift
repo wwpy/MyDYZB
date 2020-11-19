@@ -9,6 +9,7 @@ import UIKit
 
 extension UIBarButtonItem {
     /*
+     /// 扩展类方法
      class func createItem(imageName: String, highImageName: String, size: CGSize) -> UIBarButtonItem {
          let btn = UIButton()
          btn.setImage(UIImage(named: imageName), for: .normal)
