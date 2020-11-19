@@ -52,6 +52,48 @@ override var prefersStatusBarHidden: Bool {
 
 [String+Extension](./MyDYZB/Classes/Tools/Extension/String+Extension)
 
+### 定义协议和实现
+
+```swift
+// MARK: - 定义协议
+protocol PageTitleViewDelegate : class {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int)
+}
+
+class PageTitleView: UIView {
+  // MARK: - 自定义属性
+  weak var delegate: PageTitleViewDelegate?
+}
+
+extension PageTitleView {
+  @objc private func titleLabelClick(_ tapGes: UITapGestureRecognizer) {
+    // 通知代理
+    delegate?.pageTitleView(self, selectedIndex: currentIndex)
+  }
+}
+
+// MARK: - 对外暴露方法
+class PageContentView {
+    func setCurrentIndex(_ currentIndex: Int) {
+        // 1.是否执行代理方法
+        isForbidScrollDelegate = true
+        // 2.滚动到指定位置
+        let offsetX = CGFloat(currentIndex) * collectionView.frame.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
+    }
+}
+
+// MARK: - 遵守PageTitleViewDelegate协议
+class HomeViewController : PageTitleViewDelegate {
+    func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
+        pageContentView.setCurrentIndex(index)
+    }
+}
+
+```
+
+
+
 ### 监听通知
 
 ```swift
