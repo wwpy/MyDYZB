@@ -50,3 +50,39 @@ override var prefersStatusBarHidden: Bool {
 
 [String+Extension](./MyDYZB/Classes/Tools/Extension/String+Extension)
 
+### 监听通知
+
+```swift
+// 监听通知
+NotificationCenter.default.addObserver(
+  forName: NSNotification.Name(
+    rawValue: DYSwitchRootViewControllerNotification), // 通知名称, 通知中心用来识别通知的
+  object: nil,                                           // 发送通知的对象, 为nil 监听任何对象
+  queue: nil)                                            // nil 是主线程
+{ [weak self](notification) in
+ // 切换控制器
+ let vc = notification.object != nil ? LiveViewController() : ProfileViewController()
+ self?.window?.rootViewController = vc
+}
+
+// 注销通知 - 注销指定通知
+NotificationCenter.default.removeObserver(
+  self,                                                                   // 监听者
+  name: NSNotification.Name("DYSwitchRootViewControllerNotification"),    // 监听的通知
+  object: nil)                                                            // 发送通知的对象
+```
+
+### 设置服务地址和网络监听
+
+```swift
+private func initApp() {
+  /// 设定baseURL
+  let apiURL = URL(string: baseDomain)
+  EWNetworkTools.ShareInstance.updateBaseUrl(baseUrl: (apiURL?.absoluteString)!)
+  ///注册监听网络状态
+  EWNetworkTools.ShareInstance.obtainDataFromLocalWhenNetworkUnconnected()
+}
+```
+
+
+

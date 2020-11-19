@@ -39,5 +39,6 @@ let basePicPath = "http://192.168.1.213:8002/upload"
 // MARK:- 全局函数
 /// 延迟在主线程执行函数
 func delay(delta: Int, callback: @escaping () -> ()) {
+    /// 异步延迟执行
     DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(delta), execute: callback)
 }
