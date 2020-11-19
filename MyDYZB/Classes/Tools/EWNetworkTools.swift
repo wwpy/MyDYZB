@@ -25,7 +25,7 @@ class EWNetworkTools: NSObject {
         let config: URLSessionConfiguration = URLSessionConfiguration.default
         let serverTrustPolicies: [String : ServerTrustPolicy] = [
             ///正式环境的证书配置,修改成自己项目的正式url
-            "www.baidu.com": .pinCertificates(
+            "capi.douyucdn.cn": .pinCertificates(
                 certificates: ServerTrustPolicy.certificates(),
                 validateCertificateChain: true,
                 validateHost: true
