@@ -24,12 +24,15 @@ statusRect.size.height+navRect.size.height
 
 ```
 
-```
+```swift
 override var prefersStatusBarHidden: Bool {
 		return false
 }
 ```
 
+### 使用到的框架
 
+[Alamofire](./doc/Alamofire.md)
 
- 
+[Kingfisher](./doc/Kingfisher.md)
+
